@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - dockcer build -t Marvinsky/dsa_pooii_exercises -f Dockerfile .
+  - docker build -t Marvinsky/dsa_pooii_exercises -f Dockerfile .
 
 script:
   - docker run Marvinsky/dsa_pooii_exercises
